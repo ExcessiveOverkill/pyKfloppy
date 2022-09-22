@@ -1,0 +1,99 @@
+/PROG  BASE
+/ATTR
+OWNER           = MNEDITOR;
+COMMENT         = "";
+PROG_SIZE       = 102;
+CREATE          = DATE 119-01-01  TIME 15:30:27;
+MODIFIED        = DATE 119-02-03  TIME 17:04:19;
+FILE_NAME       = ;
+VERSION         = 0;
+LINE_COUNT      = 2;
+MEMORY_SIZE     = 804;
+PROTECT         = READ_WRITE;
+TCD:  STACK_SIZE        = 0,
+      TASK_PRIORITY     = 50,
+      TIME_SLICE        = 0,
+      BUSY_LAMP_OFF     = 0,
+      ABORT_REQUEST     = 0,
+      PAUSE_REQUEST     = 0;
+DEFAULT_GROUP   = 1,*,*,*,*;
+CONTROL_CODE    = 00000000 00000000;
+/MN
+   1:J P[1] 100% FINE    ;
+   2:J P[2] 100% FINE    ;
+/POS
+P[1]{
+   GP1:
+        UF : 5, UT : 1,         CONFIG : 'N, 0, 0, -1',
+        X =  1817.27  mm,       Y = -1782.11  mm,       Z =  1562.61  mm,
+        W =    18.85 deg,       P =    35.62 deg,       R =   116.43 deg
+};
+P[2]{
+   GP1:
+        UF : 5, UT : 1,         CONFIG : 'N, 0, 0, -1',
+        X =  2037.25  mm,       Y = -1860.00  mm,       Z =  1623.36  mm,
+        W =    28.04 deg,       P =    31.30 deg,       R =   136.84 deg
+};
+/END
+
+/PROG  CRCL
+/ATTR
+OWNER           = MNEDITOR;
+COMMENT         = "";
+PROG_SIZE       = 0;
+CREATE          = DATE 119-02-02  TIME 18:18:20;
+MODIFIED        = DATE 119-03-03  TIME 18:55:03;
+FILE_NAME       = ;
+VERSION         = 0;
+LINE_COUNT      = 0;
+MEMORY_SIZE     = 314;
+PROTECT         = READ_WRITE;
+TCD:  STACK_SIZE        = 0,
+      TASK_PRIORITY     = 50,
+      TIME_SLICE        = 0,
+      BUSY_LAMP_OFF     = 0,
+      ABORT_REQUEST     = 0,
+      PAUSE_REQUEST     = 0;
+DEFAULT_GROUP   = 1,*,*,*,*;
+CONTROL_CODE    = 00000000 00000000;
+/MN
+/POS
+/END
+/PROG  DAD
+/ATTR
+OWNER           = MNEDITOR;
+COMMENT         = "";
+PROG_SIZE       = 102;
+CREATE          = DATE 118-12-21  TIME 16:30:08;
+MODIFIED        = DATE 118-12-21  TIME 16:34:01;
+FILE_NAME       = ;
+VERSION         = 0;
+LINE_COUNT      = 2;
+MEMORY_SIZE     = 804;
+PROTECT         = READ_WRITE;
+TCD:  STACK_SIZE        = 0,
+      TASK_PRIORITY     = 50,
+      TIME_SLICE        = 0,
+      BUSY_LAMP_OFF     = 0,
+      ABORT_REQUEST     = 0,
+      PAUSE_REQUEST     = 0;
+DEFAULT_GROUP   = 1,*,*,*,*;
+CONTROL_CODE    = 00000000 00000000;
+/MN
+   1:J P[1] 100% CNT100    ;
+   2:J P[2] 100% CNT100    ;
+/POS
+P[1]{
+   GP1:
+        UF : 4, UT : 2,         CONFIG : 'F, 0, 0, -1',
+        X =   856.68  mm,       Y =  -708.73  mm,       Z =   191.61  mm,
+        W =   146.99 deg,       P =    23.93 deg,       R =   159.53 deg
+};
+P[2]{
+   GP1:
+        UF : 4, UT : 2,         CONFIG : 'F, 0, 1, -1',
+        X =   279.73  mm,       Y = -1194.83  mm,       Z =   156.45  mm,
+        W =  -161.09 deg,       P =   -32.87 deg,       R =  -168.26 deg
+};
+/END
+

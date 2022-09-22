@@ -1,0 +1,37 @@
+/PROG  BASE
+/ATTR
+OWNER           = MNEDITOR;
+COMMENT         = "";
+PROG_SIZE       = 102;
+CREATE          = DATE 119-01-01  TIME 15:30:27;
+MODIFIED        = DATE 119-02-03  TIME 17:04:19;
+FILE_NAME       = ;
+VERSION         = 0;
+LINE_COUNT      = 2;
+MEMORY_SIZE     = 804;
+PROTECT         = READ_WRITE;
+TCD:  STACK_SIZE        = 0,
+      TASK_PRIORITY     = 50,
+      TIME_SLICE        = 0,
+      BUSY_LAMP_OFF     = 0,
+      ABORT_REQUEST     = 0,
+      PAUSE_REQUEST     = 0;
+DEFAULT_GROUP   = 1,*,*,*,*;
+CONTROL_CODE    = 00000000 00000000;
+/MN
+   1:J P[1] 100% FINE    ;
+   2:J P[2] 100% FINE    ;
+/POS
+P[1]{
+   GP1:
+        UF : 5, UT : 1,         CONFIG : 'N, 0, 0, -1',
+        X =  1817.27  mm,       Y = -1782.11  mm,       Z =  1562.61  mm,
+        W =    18.85 deg,       P =    35.62 deg,       R =   116.43 deg
+};
+P[2]{
+   GP1:
+        UF : 5, UT : 1,         CONFIG : 'N, 0, 0, -1',
+        X =  2037.25  mm,       Y = -1860.00  mm,       Z =  1623.36  mm,
+        W =    28.04 deg,       P =    31.30 deg,       R =   136.84 deg
+};
+/END
